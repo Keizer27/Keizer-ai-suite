@@ -1,0 +1,32 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6e48aa"/>
+      <stop offset="100%" stop-color="#00d4b1"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#00d4b1" flood-opacity="0.75" result="glowColor"/>
+      <feComposite in="glowColor" in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="60" cy="60" r="50" fill="url(#gradient)" filter="url(#glow)"/>
+  
+  <path d="M40,60 Q50,45 60,60 T80,60 T100,60" 
+        stroke="#ffffff" 
+        stroke-width="8" 
+        stroke-linecap="round"
+        fill="none"/>
+  
+  <text x="60" y="95" 
+        font-family="Arial" 
+        font-size="16" 
+        font-weight="bold" 
+        fill="#ffffff" 
+        text-anchor="middle">Keizer</text>
+</svg>
