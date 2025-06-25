@@ -9,6 +9,8 @@ const tools = [
   { id: 'math', name: 'Math Solver', icon: 'fa-square-root-alt' },
   { id: 'script', name: 'Script Writer', icon: 'fa-scroll' },
   { id: 'content', name: 'Content Creator', icon: 'fa-pencil-alt' },
+  { id: 'email', name: 'Email Responder', icon: 'fa-envelope' },
+  { id: 'social', name: 'Social Media', icon: 'fa-share-alt' },
 ];
 
 export default function Sidebar({ open, onSelectTool, currentTool }) {
@@ -29,16 +31,6 @@ export default function Sidebar({ open, onSelectTool, currentTool }) {
             <span>{tool.name}</span>
           </button>
         ))}
-      </div>
-      
-      <div className="user-footer">
-        <div className="user-info">
-          <i className="fas fa-user-circle"></i>
-          <span>Your Account</span>
-        </div>
-        <button className="logout-btn">
-          <i className="fas fa-sign-out-alt"></i> Logout
-        </button>
       </div>
     </aside>
   );
