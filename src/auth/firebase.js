@@ -6,8 +6,8 @@ const firebaseConfig = {
   authDomain: "keizer-ai.firebaseapp.com",
   projectId: "keizer-ai",
   storageBucket: "keizer-ai.appspot.com",
-  messagingSenderId: "keizer-ai-suite",
-  appId: "634906926507"
+  messagingSenderId: "634906926507",
+  appId: "keizer-ai-suite"
 };
 
 const app = initializeApp(firebaseConfig);
